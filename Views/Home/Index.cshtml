@@ -1,0 +1,59 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+@{ 
+    Movie movie1 = new Movie(1, "Movie1", " Description ", "/Images/image1.png");
+    Movie movie2 = new Movie(2, "Movie2", " Description ", "/Images/image2.png");
+    Movie movie3 = new Movie(3, "Movie3", " Description ", "/Images/image3.png");
+    Movie movie4 = new Movie(4, "Movie4", " Description ", "/Images/image4.png");
+    Movie movie5 = new Movie(5, "Movie5", " Description ", "/Images/image5.png");
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <div>
+        <h1>Filmler</h1>
+    </div>
+</head>
+
+<body>
+
+    <div>
+        <a href="/Movie/Movie1">
+            <img src="@movie1.ImageUrl" width="190" height="281" alt="@movie1.Name" />
+            <p> @movie1.Name</p>
+        </a>
+    </div>
+
+    <div>
+        <a href="/Movie/Movie2">
+            <img src="@movie2.ImageUrl" width="190" height="281" alt="@movie2.Name" />
+            <p> @movie2.Name</p>
+        </a>
+    </div>
+
+    <div>
+        <a href="/Home/Movie3">
+            <img src="@movie3.ImageUrl" width="190" height="281" alt="@movie3.Name" />
+            <p> @movie3.Name</p>
+        </a>
+    </div>
+
+    <div>
+        <a href="/Home/Movie4">
+            <img src="@movie4.ImageUrl" width="190" height="281" alt="@movie4.Name" />
+            <p> @movie4.Name</p>
+        </a>
+    </div>
+
+    <div>
+        <a href="/Home/Movie5">
+            <img src="@movie5.ImageUrl" width="190" height="281" alt="@movie5.Name" />
+            <p> @movie5.Name</p>
+        </a>
+    </div>
+
+</body>
+</html>
